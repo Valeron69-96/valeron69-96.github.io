@@ -1,0 +1,633 @@
+/* Стили для страницы акций */
+
+/* Баннеры со скидками */
+.promo-banners {
+    padding: 60px 0 40px;
+}
+
+.banners-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.banner {
+    background: linear-gradient(135deg, var(--color-bg-light) 0%, var(--color-bg) 100%);
+    border-radius: var(--border-radius);
+    border: 1px solid var(--color-border);
+    overflow: hidden;
+    position: relative;
+}
+
+.banner--main {
+    grid-row: span 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.banner--secondary {
+    padding: 30px;
+}
+
+.banner__content {
+    padding: 40px;
+}
+
+.banner__badge {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: var(--color-primary);
+    color: var(--color-bg);
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.banner__title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: var(--color-primary);
+    line-height: 1.2;
+}
+
+.banner--secondary .banner__title {
+    font-size: 1.5rem;
+}
+
+.banner__text {
+    font-size: 1.1rem;
+    color: var(--color-text-secondary);
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.banner__price {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.banner__old-price {
+    font-size: 1.5rem;
+    color: var(--color-text-secondary);
+    text-decoration: line-through;
+}
+
+.banner__new-price {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+.banner__discount {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--color-primary);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.banner__timer {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+.timer__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-bg);
+    padding: 15px;
+    border-radius: var(--border-radius);
+    min-width: 70px;
+}
+
+.timer__number {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    line-height: 1;
+}
+
+.timer__label {
+    font-size: 0.8rem;
+    color: var(--color-text-secondary);
+    margin-top: 5px;
+    text-transform: lowercase;
+}
+
+.banner__features {
+    list-style: none;
+    margin-bottom: 25px;
+}
+
+.banner__features li {
+    padding: 5px 0;
+    color: var(--color-text-secondary);
+}
+
+.banner__image {
+    text-align: center;
+    padding: 20px;
+}
+
+.banner__image img {
+    border-radius: var(--border-radius);
+    max-width: 100%;
+    height: auto;
+}
+
+.btn--large {
+    padding: 16px 40px;
+    font-size: 1.1rem;
+}
+
+/* Текущие акции */
+.current-promos {
+    padding: 80px 0;
+    background-color: var(--color-bg-light);
+}
+
+.promos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.promo-card {
+    background-color: var(--color-bg);
+    border-radius: var(--border-radius);
+    border: 1px solid var(--color-border);
+    overflow: hidden;
+    transition: var(--transition);
+    position: relative;
+}
+
+.promo-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(255, 215, 0, 0.15);
+    border-color: var(--color-primary);
+}
+
+.promo-card__header {
+    position: relative;
+}
+
+.promo-card__badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: var(--color-primary);
+    color: var(--color-bg);
+    padding: 10px 15px;
+    border-radius: var(--border-radius);
+    font-weight: 700;
+    font-size: 1.1rem;
+    z-index: 2;
+}
+
+.promo-card__image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.promo-card__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.promo-card:hover .promo-card__image img {
+    transform: scale(1.05);
+}
+
+.promo-card__content {
+    padding: 25px;
+}
+
+.promo-card__title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--color-primary);
+}
+
+.promo-card__desc {
+    color: var(--color-text-secondary);
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.promo-card__meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
+
+.promo-card__date {
+    color: var(--color-text-secondary);
+}
+
+.promo-card__places {
+    color: var(--color-primary);
+    font-weight: 500;
+}
+
+/* Сезонные предложения */
+.seasonal-promos {
+    padding: 80px 0;
+}
+
+.seasonal-tabs {
+    background-color: var(--color-bg-light);
+    border-radius: var(--border-radius);
+    border: 1px solid var(--color-border);
+    overflow: hidden;
+}
+
+.tabs-nav {
+    display: flex;
+    background-color: var(--color-bg);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.tab-btn {
+    flex: 1;
+    padding: 20px;
+    background: none;
+    border: none;
+    color: var(--color-text);
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition);
+    position: relative;
+}
+
+.tab-btn::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: var(--color-primary);
+    transition: var(--transition);
+}
+
+.tab-btn:hover {
+    color: var(--color-primary);
+    background-color: var(--color-bg-light);
+}
+
+.tab-btn.active {
+    color: var(--color-primary);
+    background-color: var(--color-bg-light);
+}
+
+.tab-btn.active::after {
+    width: 100%;
+}
+
+.tabs-content {
+    padding: 0;
+}
+
+.tab-pane {
+    display: none;
+    padding: 40px;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+.seasonal-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.seasonal-info h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: var(--color-primary);
+}
+
+.seasonal-info p {
+    font-size: 1.1rem;
+    color: var(--color-text-secondary);
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.seasonal-info ul {
+    margin-bottom: 25px;
+}
+
+.seasonal-info li {
+    padding: 8px 0;
+    color: var(--color-text-secondary);
+}
+
+.seasonal-period {
+    margin-bottom: 25px;
+    padding: 15px;
+    background-color: var(--color-bg);
+    border-radius: var(--border-radius);
+    border-left: 4px solid var(--color-primary);
+}
+
+.seasonal-period strong {
+    color: var(--color-primary);
+}
+
+.seasonal-image {
+    text-align: center;
+}
+
+.seasonal-image img {
+    border-radius: var(--border-radius);
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Условия пробного занятия */
+.trial-conditions {
+    padding: 80px 0;
+    background-color: var(--color-bg-light);
+}
+
+.trial-conditions__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.conditions-content .section-title--left {
+    text-align: left;
+    margin-bottom: 2.5rem;
+}
+
+.conditions-content .section-title--left::after {
+    margin-left: 0;
+}
+
+.conditions-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.condition-item {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    padding: 25px;
+    background-color: var(--color-bg);
+    border-radius: var(--border-radius);
+    border: 1px solid var(--color-border);
+    transition: var(--transition);
+}
+
+.condition-item:hover {
+    border-color: var(--color-primary);
+    transform: translateX(5px);
+}
+
+.condition-icon {
+    font-size: 2.5rem;
+    flex-shrink: 0;
+}
+
+.condition-info h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--color-primary);
+}
+
+.condition-info p {
+    color: var(--color-text-secondary);
+    line-height: 1.5;
+}
+
+/* Форма пробного занятия */
+.trial-form-container {
+    background-color: var(--color-bg);
+    padding: 40px;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--color-border);
+    position: sticky;
+    top: 100px;
+}
+
+.trial-form h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--color-primary);
+    text-align: center;
+}
+
+.form-subtitle {
+    text-align: center;
+    color: var(--color-text-secondary);
+    margin-bottom: 25px;
+    font-size: 0.95rem;
+}
+
+.trial-form .form-group {
+    margin-bottom: 20px;
+}
+
+.trial-form .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: var(--color-text);
+    font-size: 0.9rem;
+}
+
+.trial-form .form-group input,
+.trial-form .form-group select {
+    width: 100%;
+    padding: 12px 16px;
+    background-color: var(--color-bg-light);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    color: var(--color-text);
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.trial-form .form-group input:focus,
+.trial-form .form-group select:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 2px rgba(255, 215, 0, 0.1);
+}
+
+.trial-form .form-notice {
+    font-size: 0.8rem;
+    color: var(--color-text-secondary);
+    text-align: center;
+    margin-top: 20px;
+    line-height: 1.4;
+}
+
+/* CTA секция */
+.cta--promo {
+    background: linear-gradient(135deg, var(--color-primary) 0%, #FFED4E 100%);
+    color: var(--color-bg);
+}
+
+.cta--promo .cta__title {
+    color: var(--color-bg);
+}
+
+.cta--promo .btn--secondary {
+    background-color: var(--color-bg);
+    color: var(--color-primary);
+    border-color: var(--color-bg);
+}
+
+.cta--promo .btn--secondary:hover {
+    background-color: var(--color-bg-light);
+    border-color: var(--color-bg-light);
+}
+
+/* Анимации */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.promo-card__badge {
+    animation: pulse 2s infinite;
+}
+
+/* Адаптивность */
+@media (max-width: 1200px) {
+    .banners-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .banner--main {
+        grid-row: auto;
+        grid-template-columns: 1fr;
+    }
+    
+    .banner__image {
+        order: -1;
+    }
+}
+
+@media (max-width: 992px) {
+    .trial-conditions__inner {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .trial-form-container {
+        position: static;
+    }
+    
+    .seasonal-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .seasonal-image {
+        order: -1;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner__content {
+        padding: 30px 20px;
+    }
+    
+    .banner__title {
+        font-size: 1.8rem;
+    }
+    
+    .banner__timer {
+        gap: 10px;
+    }
+    
+    .timer__item {
+        min-width: 60px;
+        padding: 10px;
+    }
+    
+    .timer__number {
+        font-size: 1.5rem;
+    }
+    
+    .tabs-nav {
+        flex-direction: column;
+    }
+    
+    .tab-btn {
+        padding: 15px;
+    }
+    
+    .tab-pane {
+        padding: 30px 20px;
+    }
+    
+    .promos-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .condition-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .banner__timer {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .banner__price {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .trial-form-container {
+        padding: 25px 20px;
+    }
+    
+    .btn--large {
+        padding: 14px 30px;
+        font-size: 1rem;
+    }
+}

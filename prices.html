@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цены и абонементы | FITNESS - Фитнес-клуб в Туле</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/prices.css">
+</head>
+<body>
+    <!-- Шапка (такая же как на главной) -->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="/" class="logo">
+                    <span class="logo__text">FITNESS</span>
+                </a>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li><a href="prices.html" class="nav__link nav__link--active">Цены</a></li>
+                        <li><a href="schedule.html" class="nav__link">Расписание</a></li>
+                        <li><a href="promo.html" class="nav__link">Акции</a></li>
+                        <li><a href="news.html" class="nav__link">Новости</a></li>
+                        <li><a href="blog.html" class="nav__link">Блог</a></li>
+                        <li><a href="gallery.html" class="nav__link">Галерея</a></li>
+                        <li><a href="contacts.html" class="nav__link">Контакты</a></li>
+                    </ul>
+                </nav>
+                <a href="tel:+79999999999" class="phone">+7 (999) 999-99-99</a>
+                <button class="burger" aria-label="Открыть меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Хлебные крошки -->
+        <section class="breadcrumbs">
+            <div class="container">
+                <nav class="breadcrumbs__nav">
+                    <a href="index.html" class="breadcrumbs__link">Главная</a>
+                    <span class="breadcrumbs__separator">/</span>
+                    <span class="breadcrumbs__current">Цены и абонементы</span>
+                </nav>
+            </div>
+        </section>
+
+        <!-- Заголовок страницы -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-header__title">Цены и абонементы</h1>
+                <p class="page-header__subtitle">Выберите оптимальный вариант для достижения ваших целей</p>
+            </div>
+        </section>
+
+        <!-- Таблица тарифов -->
+        <section class="pricing">
+            <div class="container">
+                <div class="pricing__grid">
+                    <!-- Тариф 1 -->
+                    <div class="pricing-card">
+                        <div class="pricing-card__header">
+                            <h3 class="pricing-card__title">Стандарт</h3>
+                            <div class="pricing-card__price">
+                                <span class="pricing-card__amount">3 900 ₽</span>
+                                <span class="pricing-card__period">/ месяц</span>
+                            </div>
+                        </div>
+                        <div class="pricing-card__features">
+                            <ul>
+                                <li class="pricing-card__feature">✓ Тренажерный зал</li>
+                                <li class="pricing-card__feature">✓ Кардио-зона</li>
+                                <li class="pricing-card__feature">✓ Раздевалка и душ</li>
+                                <li class="pricing-card__feature">✓ Фитнес-тестирование</li>
+                                <li class="pricing-card__feature pricing-card__feature--disabled">✗ Групповые занятия</li>
+                                <li class="pricing-card__feature pricing-card__feature--disabled">✗ Персональные тренировки</li>
+                            </ul>
+                        </div>
+                        <div class="pricing-card__footer">
+                            <button class="btn btn--primary btn--block">Выбрать тариф</button>
+                        </div>
+                    </div>
+
+                    <!-- Тариф 2 (Популярный) -->
+                    <div class="pricing-card pricing-card--popular">
+                        <div class="pricing-card__badge">Популярный</div>
+                        <div class="pricing-card__header">
+                            <h3 class="pricing-card__title">Премиум</h3>
+                            <div class="pricing-card__price">
+                                <span class="pricing-card__amount">5 900 ₽</span>
+                                <span class="pricing-card__period">/ месяц</span>
+                            </div>
+                        </div>
+                        <div class="pricing-card__features">
+                            <ul>
+                                <li class="pricing-card__feature">✓ Тренажерный зал</li>
+                                <li class="pricing-card__feature">✓ Кардио-зона</li>
+                                <li class="pricing-card__feature">✓ Все групповые занятия</li>
+                                <li class="pricing-card__feature">✓ Фитнес-тестирование</li>
+                                <li class="pricing-card__feature">✓ Солярий</li>
+                                <li class="pricing-card__feature pricing-card__feature--disabled">✗ Персональные тренировки</li>
+                            </ul>
+                        </div>
+                        <div class="pricing-card__footer">
+                            <button class="btn btn--primary btn--block">Выбрать тариф</button>
+                        </div>
+                    </div>
+
+                    <!-- Тариф 3 -->
+                    <div class="pricing-card">
+                        <div class="pricing-card__header">
+                            <h3 class="pricing-card__title">Все включено</h3>
+                            <div class="pricing-card__price">
+                                <span class="pricing-card__amount">8 900 ₽</span>
+                                <span class="pricing-card__period">/ месяц</span>
+                            </div>
+                        </div>
+                        <div class="pricing-card__features">
+                            <ul>
+                                <li class="pricing-card__feature">✓ Тренажерный зал</li>
+                                <li class="pricing-card__feature">✓ Кардио-зона</li>
+                                <li class="pricing-card__feature">✓ Все групповые занятия</li>
+                                <li class="pricing-card__feature">✓ 2 персональные тренировки</li>
+                                <li class="pricing-card__feature">✓ Солярий + SPА-зона</li>
+                                <li class="pricing-card__feature">✓ Заморозка абонемента</li>
+                            </ul>
+                        </div>
+                        <div class="pricing-card__footer">
+                            <button class="btn btn--primary btn--block">Выбрать тариф</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Дополнительные услуги -->
+        <section class="additional-services">
+            <div class="container">
+                <h2 class="section-title">Дополнительные услуги</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-card__icon">💪</div>
+                        <h3 class="service-card__title">Персональные тренировки</h3>
+                        <p class="service-card__price">от 1 500 ₽ / занятие</p>
+                        <p class="service-card__desc">Индивидуальный подход к вашим целям</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-card__icon">🧘</div>
+                        <h3 class="service-card__title">Йога с инструктором</h3>
+                        <p class="service-card__price">1 200 ₽ / занятие</p>
+                        <p class="service-card__desc">Персональные уроки йоги</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-card__icon">📊</div>
+                        <h3 class="service-card__title">Фитнес-тестирование</h3>
+                        <p class="service-card__price">2 000 ₽</p>
+                        <p class="service-card__desc">Анализ состава тела и консультация</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-card__icon">👨‍👩‍👧‍👦</div>
+                        <h3 class="service-card__title">Семейный абонемент</h3>
+                        <p class="service-card__price">12 000 ₽ / месяц</p>
+                        <p class="service-card__desc">Для 2 взрослых и 1 ребенка</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Корпоративные абонементы -->
+        <section class="corporate">
+            <div class="container">
+                <div class="corporate__inner">
+                    <div class="corporate__content">
+                        <h2 class="section-title section-title--left">Корпоративные абонементы</h2>
+                        <p class="corporate__text">Специальные условия для компаний. Улучшите здоровье и продуктивность вашей команды!</p>
+                        <ul class="corporate__benefits">
+                            <li>Скидки до 25% для сотрудников</li>
+                            <li>Гибкий график посещений</li>
+                            <li>Корпоративные мероприятия</li>
+                            <li>Персональный менеджер</li>
+                        </ul>
+                        <button class="btn btn--primary">Получить коммерческое предложение</button>
+                    </div>
+                    <div class="corporate__image">
+                        <img src="img/price.webp" alt="Корпоративный фитнес" width="500" height="350">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Онлайн-оплата -->
+        <section class="online-payment">
+            <div class="container">
+                <div class="online-payment__inner">
+                    <div class="online-payment__content">
+                        <h2>Онлайн-оплата</h2>
+                        <p>Оплатите абонемент онлайн и получите скидку 5% на первую покупку!</p>
+                        <div class="payment-methods">
+                            <div class="payment-method">💳</div>
+                            <div class="payment-method">🤝</div>
+                            <div class="payment-method">📱</div>
+                            <div class="payment-method">🌐</div>
+                        </div>
+                        <button class="btn btn--primary">Перейти к оплате</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="faq">
+            <div class="container">
+                <h2 class="section-title">Частые вопросы</h2>
+                <div class="faq__list">
+                    <div class="faq-item">
+                        <button class="faq-item__question">
+                            Можно ли заморозить абонемент?
+                            <span class="faq-item__icon">+</span>
+                        </button>
+                        <div class="faq-item__answer">
+                            <p>Да, вы можете заморозить абонемент на срок от 14 до 30 дней. Услуга доступна для тарифов "Премиум" и "Все включено".</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-item__question">
+                            Есть ли пробный период?
+                            <span class="faq-item__icon">+</span>
+                        </button>
+                        <div class="faq-item__answer">
+                            <p>Мы предлагаем бесплатное пробное занятие для новых клиентов. Запишитесь через форму на сайте или по телефону.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-item__question">
+                            Как продлить абонемент?
+                            <span class="faq-item__icon">+</span>
+                        </button>
+                        <div class="faq-item__answer">
+                            <p>Абонемент можно продлить онлайн через личный кабинет, в приложении или у администратора клуба.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA секция -->
+        <section class="cta cta--dark">
+            <div class="container">
+                <div class="cta__content">
+                    <h2 class="cta__title">Остались вопросы?</h2>
+                    <p class="cta__text">Наш менеджер поможет подобрать оптимальный абонемент и ответит на все ваши вопросы</p>
+                    <div class="cta__buttons">
+                        <a href="tel:+79999999999" class="btn btn--primary">Позвонить нам</a>
+                        <a href="contacts.html" class="btn btn--secondary">Написать сообщение</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал (такой же как на главной) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__col">
+                    <a href="/" class="logo footer__logo">
+                        <span class="logo__text">FITNESS</span>
+                    </a>
+                    <p class="footer__text">Современный фитнес-клуб в Туле. Достигайте целей с удовольствием.</p>
+                </div>
+                <div class="footer__col">
+                    <h3 class="footer__title">Контакты</h3>
+                    <address class="footer__contacts">
+                        <p>г. Тула, ул. Пушкина, 123</p>
+                        <p><a href="tel:+79999999999">+7 (999) 999-99-99</a></p>
+                        <p><a href="mailto:info@fitness-tula.ru">info@fitness-tula.ru</a></p>
+                    </address>
+                </div>
+                <div class="footer__col">
+                    <h3 class="footer__title">Часы работы</h3>
+                    <p>Пн-Пт: 7:00 - 23:00</p>
+                    <p>Сб-Вс: 8:00 - 22:00</p>
+                </div>
+                <div class="footer__col">
+                    <h3 class="footer__title">Мы в соцсетях</h3>
+                    <div class="social">
+                        <a href="#" aria-label="ВКонтакте">VK</a>
+                        <a href="#" aria-label="Instagram">Instagram</a>
+                        <a href="#" aria-label="Telegram">Telegram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2023 FITNESS. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/prices.js"></script>
+</body>
+</html>

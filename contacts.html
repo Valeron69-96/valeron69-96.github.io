@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты | FITNESS - Фитнес-клуб в Туле</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contacts.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="/" class="logo">
+                    <span class="logo__text">FITNESS</span>
+                </a>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li><a href="prices.html" class="nav__link">Цены</a></li>
+                        <li><a href="schedule.html" class="nav__link">Расписание</a></li>
+                        <li><a href="promo.html" class="nav__link">Акции</a></li>
+                        <li><a href="news.html" class="nav__link">Новости</a></li>
+                        <li><a href="blog.html" class="nav__link">Блог</a></li>
+                        <li><a href="gallery.html" class="nav__link">Галерея</a></li>
+                        <li><a href="contacts.html" class="nav__link nav__link--active">Контакты</a></li>
+                    </ul>
+                </nav>
+                <a href="tel:+79999999999" class="phone">+7 (999) 999-99-99</a>
+                <button class="burger" aria-label="Открыть меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Хлебные крошки -->
+        <section class="breadcrumbs">
+            <div class="container">
+                <nav class="breadcrumbs__nav">
+                    <a href="index.html" class="breadcrumbs__link">Главная</a>
+                    <span class="breadcrumbs__separator">/</span>
+                    <span class="breadcrumbs__current">Контакты</span>
+                </nav>
+            </div>
+        </section>
+
+        <!-- Заголовок страницы -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-header__title">Контакты</h1>
+                <p class="page-header__subtitle">Мы всегда рады вашим вопросам и предложениям</p>
+            </div>
+        </section>
+
+        <!-- Контактная информация -->
+        <section class="contact-info">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Адрес -->
+                    <div class="contact-card">
+                        <div class="contact-icon">📍</div>
+                        <h3>Адрес</h3>
+                        <p>г. Тула, ул. Примерная, 123</p>
+                        <p>Вход со стороны парковки</p>
+                    </div>
+
+                    <!-- Телефон -->
+                    <div class="contact-card">
+                        <div class="contact-icon">📞</div>
+                        <h3>Телефон</h3>
+                        <p><a href="tel:+79999999999">+7 (999) 999-99-99</a></p>
+                        <p>Ежедневно с 7:00 до 23:00</p>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="contact-card">
+                        <div class="contact-icon">✉️</div>
+                        <h3>Email</h3>
+                        <p><a href="mailto:info@fitness-tula.ru">info@fitness-tula.ru</a></p>
+                        <p>Ответим в течение дня</p>
+                    </div>
+
+                    <!-- Часы работы -->
+                    <div class="contact-card">
+                        <div class="contact-icon">🕒</div>
+                        <h3>Часы работы</h3>
+                        <p>Пн-Пт: 7:00 - 23:00</p>
+                        <p>Сб-Вс: 8:00 - 22:00</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Карта и форма -->
+        <section class="map-form-section">
+            <div class="container">
+                <div class="map-form-grid">
+                    <!-- Карта -->
+                    <div class="map-placeholder">
+    <div class="map-container">
+        <!-- Яндекс Карта -->
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae7c486d9a8f86f7d4a4e5e8b8c7a3b2d1&amp;width=100%&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+    </div>
+    <div class="map-links">
+        <a href="https://yandex.ru/maps/org/fiziologika/162371753082/?display-text=%D0%A4%D0%B8%D1%82%D0%BD%D0%B5%D1%81-%D0%BA%D0%BB%D1%83%D0%B1%D1%8B&ll=37.685227%2C54.189885&mode=search&sll=37.619309%2C54.189842&text=category_id%3A%28184107363%29&z=12" class="btn btn--secondary" target="_blank">Открыть в Яндекс.Картах</a>
+        <a href="https://www.google.com/maps/place/%D0%A2%D1%83%D0%BB%D0%B0/" class="btn btn--secondary" target="_blank">Открыть в Google Maps</a>
+    </div>
+</div>
+
+                    <!-- Форма обратной связи -->
+                    <div class="form-container">
+                        <h2>Напишите нам</h2>
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Ваше имя *</label>
+                                <input type="text" id="name" name="name" required placeholder="Иван Иванов">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Телефон *</label>
+                                <input type="tel" id="phone" name="phone" required placeholder="+7 (999) 999-99-99">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="ivan@example.com">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Сообщение *</label>
+                                <textarea id="message" name="message" required placeholder="Расскажите, чем мы можем вам помочь..." rows="5"></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn--primary btn--block">Отправить сообщение</button>
+
+                            <p class="form-notice">Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Мессенджеры -->
+        <section class="messengers-section">
+            <div class="container">
+                <h2 class="section-title">Напишите в мессенджер</h2>
+                <div class="messengers-grid">
+                    <a href="https://wa.me/79999999999" class="messenger-card" target="_blank">
+                        <div class="messenger-icon">💚</div>
+                        <h3>WhatsApp</h3>
+                        <p>Быстрый ответ</p>
+                    </a>
+
+                    <a href="https://t.me/fitness_tula" class="messenger-card" target="_blank">
+                        <div class="messenger-icon">💙</div>
+                        <h3>Telegram</h3>
+                        <p>Написать в чат</p>
+                    </a>
+
+                    <a href="viber://chat?number=+79999999999" class="messenger-card" target="_blank">
+                        <div class="messenger-icon">💜</div>
+                        <h3>Viber</h3>
+                        <p>Бесплатные звонки</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Как добраться -->
+        <section class="directions-section">
+            <div class="container">
+                <h2 class="section-title">Как добраться</h2>
+                <div class="directions-grid">
+                    <div class="direction-card">
+                        <h3>🚗 На автомобиле</h3>
+                        <p>Бесплатная парковка на 50 мест. Въезд с ул. Пушкина.</p>
+                    </div>
+
+                    <div class="direction-card">
+                        <h3>🚍 Общественный транспорт</h3>
+                        <p>Остановка "Парк культуры": автобусы № 12, 25, 36; троллейбусы № 3, 7.</p>
+                    </div>
+
+                    <div class="direction-card">
+                        <h3>🚶 Пешком</h3>
+                        <p>10 минут от центрального входа в парк. Рядом с кинотеатром "Современник".</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta">
+            <div class="container">
+                <div class="cta__content">
+                    <h2 class="cta__title">Готовы начать тренировки?</h2>
+                    <p class="cta__text">Приходите на бесплатную экскурсию по клубу и первую пробную тренировку</p>
+                    <div class="cta__buttons">
+                        <a href="tel:+79999999999" class="btn btn--primary">Позвонить нам</a>
+                        <a href="schedule.html" class="btn btn--secondary">Записаться онлайн</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__col">
+                    <a href="/" class="logo footer__logo">
+                        <span class="logo__text">FITNESS</span>
+                    </a>
+                    <p class="footer__text">Современный фитнес-клуб в Туле. Достигайте целей с удовольствием.</p>
+                </div>
+                <div class="footer__col">
+                    <h3 class="footer__title">Контакты</h3>
+                    <address class="footer__contacts">
+                        <p>г. Тула, ул. Пушкина, 123</p>
+                        <p><a href="tel:+79999999999">+7 (999) 999-99-99</a></p>
+                        <p><a href="mailto:info@fitness-tula.ru">info@fitness-tula.ru</a></p>
+                    </address>
+                </div>
+                <div class="footer__col">
+                    <h3 class="footer__title">Часы работы</h3>
+                    <p>Пн-Пт: 7:00 - 23:00</p>
+                    <p>Сб-Вс: 8:00 - 22:00</p>
+                </div>
+                <div class="footer__col">
+                    <h3 class="footer__title">Мы в соцсетях</h3>
+                    <div class="social">
+                        <a href="#" aria-label="ВКонтакте">VK</a>
+                        <a href="#" aria-label="Instagram">Instagram</a>
+                        <a href="#" aria-label="Telegram">Telegram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2023 FITNESS. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/contacts.js"></script>
+</body>
+</html>

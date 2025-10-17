@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Блог о фитнесе и здоровье | FITNESS - Тула</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/blog.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="/" class="logo">
+                    <span class="logo__text">FITNESS</span>
+                </a>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li><a href="prices.html" class="nav__link">Цены</a></li>
+                        <li><a href="schedule.html" class="nav__link">Расписание</a></li>
+                        <li><a href="promo.html" class="nav__link">Акции</a></li>
+                        <li><a href="news.html" class="nav__link">Новости</a></li>
+                        <li><a href="blog.html" class="nav__link nav__link--active">Блог</a></li>
+                        <li><a href="gallery.html" class="nav__link">Галерея</a></li>
+                        <li><a href="contacts.html" class="nav__link">Контакты</a></li>
+                    </ul>
+                </nav>
+                <a href="tel:+79999999999" class="phone">+7 (999) 999-99-99</a>
+                <button class="burger" aria-label="Открыть меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Хлебные крошки -->
+        <section class="breadcrumbs">
+            <div class="container">
+                <nav class="breadcrumbs__nav">
+                    <a href="index.html" class="breadcrumbs__link">Главная</a>
+                    <span class="breadcrumbs__separator">/</span>
+                    <span class="breadcrumbs__current">Блог</span>
+                </nav>
+            </div>
+        </section>
+
+        <!-- Заголовок страницы -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-header__title">Блог о здоровье и фитнесе</h1>
+                <p class="page-header__subtitle">Полезные статьи о тренировках, питании и здоровом образе жизни</p>
+            </div>
+        </section>
+
+        <!-- Статьи -->
+        <section class="blog-section">
+            <div class="container">
+                <div class="blog-grid">
+                    <!-- Статья 1 -->
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img src="img/питwebp.webp" alt="Питание при тренировках" loading="lazy">
+                        </div>
+                        <div class="blog-content">
+                            <span class="blog-category">Питание</span>
+                            <h2 class="blog-title">Как питаться при регулярных тренировках</h2>
+                            <p class="blog-excerpt">Основные принципы питания до и после тренировок. Какие продукты помогут достичь лучших результатов и восстановиться быстрее.</p>
+                            <div class="blog-meta">
+                                <span class="blog-date">15 июня 2024</span>
+                                <span class="blog-read-time">5 мин чтения</span>
+                            </div>
+                            <a href="#" class="blog-read-more">Читать статью</a>
+                        </div>
+                    </article>
+
+                    <!-- Статья 2 -->
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img src="img/совет.webp" alt="Советы новичкам" loading="lazy">
+                        </div>
+                        <div class="blog-content">
+                            <span class="blog-category">Тренировки</span>
+                            <h2 class="blog-title">5 советов для начинающих в фитнесе</h2>
+                            <p class="blog-excerpt">С чего начать тренировки, как избежать распространенных ошибок и сохранить мотивацию на пути к здоровому образу жизни.</p>
+                            <div class="blog-meta">
+                                <span class="blog-date">10 июня 2024</span>
+                                <span class="blog-read-time">7 мин чтения</span>
+                            </div>
+                            <a href="#" class="blog-read-more">Читать статью</a>
+                        </div>
+                    </article>
+
+                    <!-- Статья 3 -->
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img src="img/отдых.webp" alt="Восстановление" loading="lazy">
+                        </div>
+                        <div class="blog-content">
+                            <span class="blog-category">Здоровье</span>
+                            <h2 class="blog-title">Важность восстановления после тренировок</h2>
+                            <p class="blog-excerpt">Почему отдых так же важен, как и сами тренировки. Методы восстановления: сон, растяжка, питание и активный отдых.</p>
+                            <div class="blog-meta">
+                                <span class="blog-date">5 июня 2024</span>
+                                <span class="blog-read-time">6 мин чтения</span>
+                            </div>
+                            <a href="#" class="blog-read-more">Читать статью</a>
+                        </div>
+                    </article>
+
+                    <!-- Статья 4 -->
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img src="img/вода.webp" alt="Вода и тренировки" loading="lazy">
+                        </div>
+                        <div class="blog-content">
+                            <span class="blog-category">Питание</span>
+                            <h2 class="blog-title">Роль воды в тренировочном процессе</h2>
+                            <p class="blog-excerpt">Сколько воды нужно пить до, во время и после тренировки. Как обезвоживание влияет на результаты и самочувствие.</p>
+                            <div class="blog-meta">
+                                <span class="blog-date">1 июня 2024</span>
+                                <span class="blog-read-time">4 мин чтения</span>
+                            </div>
+                            <a href="#" class="blog-read-more">Читать статью</a>
+                        </div>
+                    </article>
+
+                    <!-- Статья 5 -->
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img src="img/home.jpg" alt="Домашние тренировки" loading="lazy">
+                        </div>
+                        <div class="blog-content">
+                            <span class="blog-category">Тренировки</span>
+                            <h2 class="blog-title">Эффективные тренировки дома</h2>
+                            <p class="blog-excerpt">Как поддерживать форму без посещения зала. Простые упражнения и программы для домашних тренировок.</p>
+                            <div class="blog-meta">
+                                <span class="blog-date">28 мая 2024</span>
+                                <span class="blog-read-time">8 мин чтения</span>
+                            </div>
+                            <a href="#" class="blog-read-more">Читать статью</a>
+                        </div>
+                    </article>
+
+                    <!-- Статья 6 -->
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img src="img/moti.webp" alt="Мотивация" loading="lazy">
+                        </div>
+                        <div class="blog-content">
+                            <span class="blog-category">Психология</span>
+                            <h2 class="blog-title">Как сохранить мотивацию к тренировкам</h2>
+                            <p class="blog-excerpt">Практические советы по поддержанию интереса к фитнесу. Как ставить цели и отслеживать прогресс.</p>
+                            <div class="blog-meta">
+                                <span class="blog-date">25 мая 2024</span>
+                                <span class="blog-read-time">5 мин чтения</span>
+                            </div>
+                            <a href="#" class="blog-read-more">Читать статью</a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Пагинация -->
+                <div class="pagination">
+                    <a href="#" class="pagination-btn active">1</a>
+                    <a href="#" class="pagination-btn">2</a>
+                    <a href="#" class="pagination-btn">3</a>
+                    <a href="#" class="pagination-btn next">Следующая</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Популярные темы -->
+        <section class="topics-section">
+            <div class="container">
+                <h2 class="section-title">Популярные темы</h2>
+                <div class="topics-grid">
+                    <a href="#" class="topic-card">
+                        <h3>Питание</h3>
+                        <p>12 статей</p>
+                    </a>
+                    <a href="#" class="topic-card">
+                        <h3>Силовые тренировки</h3>
+                        <p>8 статей</p>
+                    </a>
+                    <a href="#" class="topic-card">
+                        <h3>Кардио</h3>
+                        <p>6 статей</p>
+                    </a>
+                    <a href="#" class="topic-card">
+                        <h3>Йога и растяжка</h3>
+                        <p>5 статей</p>
+                    </a>
+                    <a href="#" class="topic-card">
+                        <h3>Психология спорта</h3>
+                        <p>4 статей</p>
+                    </a>
+                    <a href="#" class="topic-card">
+                        <h3>Восстановление</h3>
+                        <p>7 статей</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta">
+            <div class="container">
+                <div class="cta__content">
+                    <h2 class="cta__title">Остались вопросы?</h2>
+                    <p class="cta__text">Наши тренеры с радостью проконсультируют вас по любым вопросам тренировок и питания</p>
+                    <a href="contacts.html" class="btn btn--primary">Задать вопрос тренеру</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__col">
+                    <a href="/" class="logo footer__logo">
+                        <span class="logo__text">FITNESS</span>
+                    </a>
+                    <p class="footer__text">Современный фитнес-клуб в Туле. Достигайте целей с удовольствием.</p>
+                </div>
+                <div class="footer__col">
+                    <h3 class="footer__title">Контакты</h3>
+                    <address class="footer__contacts">
+                        <p>г. Тула, ул. Пушкина, 123</p>
+                        <p><a href="tel:+79999999999">+7 (999) 999-99-99</a></p>
+                        <p><a href="mailto:info@fitness-tula.ru">info@fitness-tula.ru</a></p>
+                    </address>
+                </div>
+                <div class="footer__col">
+                    <h3 class="footer__title">Часы работы</h3>
+                    <p>Пн-Пт: 7:00 - 23:00</p>
+                    <p>Сб-Вс: 8:00 - 22:00</p>
+                </div>
+                <div class="footer__col">
+                    <h3 class="footer__title">Мы в соцсетях</h3>
+                    <div class="social">
+                        <a href="#" aria-label="ВКонтакте">VK</a>
+                        <a href="#" aria-label="Instagram">Instagram</a>
+                        <a href="#" aria-label="Telegram">Telegram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2023 FITNESS. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

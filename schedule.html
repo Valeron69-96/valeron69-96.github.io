@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Расписание занятий | FITNESS - Фитнес-клуб в Туле</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/schedule.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="/" class="logo">
+                    <span class="logo__text">FITNESS</span>
+                </a>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li><a href="prices.html" class="nav__link">Цены</a></li>
+                        <li><a href="schedule.html" class="nav__link nav__link--active">Расписание</a></li>
+                        <li><a href="promo.html" class="nav__link">Акции</a></li>
+                        <li><a href="news.html" class="nav__link">Новости</a></li>
+                        <li><a href="blog.html" class="nav__link">Блог</a></li>
+                        <li><a href="gallery.html" class="nav__link">Галерея</a></li>
+                        <li><a href="contacts.html" class="nav__link">Контакты</a></li>
+                    </ul>
+                </nav>
+                <a href="tel:+79999999999" class="phone">+7 (999) 999-99-99</a>
+                <button class="burger" aria-label="Открыть меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Хлебные крошки -->
+        <section class="breadcrumbs">
+            <div class="container">
+                <nav class="breadcrumbs__nav">
+                    <a href="index.html" class="breadcrumbs__link">Главная</a>
+                    <span class="breadcrumbs__separator">/</span>
+                    <span class="breadcrumbs__current">Расписание</span>
+                </nav>
+            </div>
+        </section>
+
+        <!-- Заголовок страницы -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-header__title">Расписание занятий</h1>
+                <p class="page-header__subtitle">Выберите удобное время и записывайтесь на тренировки онлайн</p>
+            </div>
+        </section>
+
+        <!-- Фильтры и навигация -->
+        <section class="schedule-filters">
+            <div class="container">
+                <div class="filters__inner">
+                    <!-- Фильтр по дням -->
+                    <div class="days-filter">
+                        <button class="day-btn active" data-day="all">Все дни</button>
+                        <button class="day-btn" data-day="monday">Понедельник</button>
+                        <button class="day-btn" data-day="tuesday">Вторник</button>
+                        <button class="day-btn" data-day="wednesday">Среда</button>
+                        <button class="day-btn" data-day="thursday">Четверг</button>
+                        <button class="day-btn" data-day="friday">Пятница</button>
+                        <button class="day-btn" data-day="saturday">Суббота</button>
+                        <button class="day-btn" data-day="sunday">Воскресенье</button>
+                    </div>
+
+                    <!-- Фильтр по направлениям -->
+                    <div class="category-filter">
+                        <select class="category-select" id="categorySelect">
+                            <option value="all">Все направления</option>
+                            <option value="yoga">Йога</option>
+                            <option value="pilates">Пилатес</option>
+                            <option value="strength">Силовые</option>
+                            <option value="cardio">Кардио</option>
+                            <option value="dance">Танцы</option>
+                            <option value="functional">Функциональный тренинг</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Расписание -->
+        <section class="schedule">
+            <div class="container">
+                <div class="schedule__container">
+                    <!-- Понедельник -->
+                    <div class="day-schedule" data-day="monday">
+                        <h2 class="day-title">Понедельник</h2>
+                        <div class="classes-list">
+                            <!-- Занятие 1 -->
+                            <div class="class-card" data-category="yoga">
+                                <div class="class-time">09:00 - 10:00</div>
+                                <div class="class-info">
+                                    <h3 class="class-name">Утренняя йога</h3>
+                                    <p class="class-trainer">Тренер: Анна Иванова</p>
+                                    <p class="class-desc">Начальный уровень. Пробуждение тела и ума</p>
+                                </div>
+                                <div class="class-actions">
+                                    <span class="class-slots">Осталось 5 мест</span>
+                                    <button class="btn btn--primary btn--small btn-book">Записаться</button>
+                                </div>
+                            </div>
+
+                            <!-- Занятие 2 -->
+                            <div class="class-card" data-category="strength">
+                                <div class="class-time">10:30 - 11:30</div>
+                                <div class="class-info">
+                                    <h3 class="class-name">Силовая тренировка</h3>
+                                    <p class="class-trainer">Тренер: Максим Петров</p>
+                                    <p class="class-desc">Проработка всех групп мышц</p>
+                                </div>
+                                <div class="class-actions">
+                                    <span class="class-slots">Осталось 3 места</span>
+                                    <button class="btn btn--primary btn--small btn-book">Записаться</button>
+                                </div>
+                            </div>
+
+                            <!-- Занятие 3 -->
+                            <div class="class-card" data-category="pilates">
+                                <div class="class-time">18:00 - 19:00</div>
+                                <div class="class-info">
+                                    <h3 class="class-name">Пилатес</h3>
+                                    <p class="class-trainer">Тренер: Елена Смирнова</p>
+                                    <p class="class-desc">Укрепление мышечного корсета</p>
+                                </div>
+                                <div class="class-actions">
+                                    <span class="class-slots class-slots--full">Мест нет</span>
+                                    <button class="btn btn--secondary btn--small" disabled>Запись закрыта</button>
+                                </div>
+                            </div>
+
+                            <!-- Занятие 4 -->
+                            <div class="class-card" data-category="dance">
+                                <div class="class-time">19:30 - 20:30</div>
+                                <div class="class-info">
+                                    <h3 class="class-name">Zumba</h3>
+                                    <p class="class-trainer">Тренер: Ольга Козлова</p>
+                                    <p class="class-desc">Танцевальный фитнес</p>
+                                </div>
+                                <div class="class-actions">
+                                    <span class="class-slots">Осталось 8 мест</span>
+                                    <button class="btn btn--primary btn--small btn-book">Записаться</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Вторник -->
+                    <div class="day-schedule" data-day="tuesday">
+                        <h2 class="day-title">Вторник</h2>
+                        <div class="classes-list">
+                            <!-- Занятие 1 -->
+                            <div class="class-card" data-category="cardio">
+                                <div class="class-time">08:00 - 09:00</div>
+                                <div class="class-info">
+                                    <h3 class="class-name">Интервальное кардио</h3>
+                                    <p class="class-trainer">Тренер: Максим Петров</p>
+                                    <p class="class-desc">Высокоинтенсивная тренировка</p>
+                                </div>
+                                <div class="class-actions">
+                                    <span class="class-slots">Осталось 6 мест</span>
+                                    <button class="btn btn--primary btn--small btn-book">Записаться</button>
+                                </div>
+                            </div>
+
+                            <!-- Занятие 2 -->
+                            <div class="class-card" data-category="functional">
+                                <div class="class-time">17:00 - 18:00</div>
+                                <div class="class-info">
+                                    <h3 class="class-name">Функциональный тренинг</h3>
+                                    <p class="class-trainer">Тренер: Дмитрий Сидоров</p>
+                                    <p class="class-desc">Развитие выносливости и силы</p>
+                                </div>
+                                <div class="class-actions">
+                                    <span class="class-slots">Осталось 4 места</span>
+                                    <button class="btn btn--primary btn--small btn-book">Записаться</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Добавьте остальные дни недели по аналогии -->
+                    <!-- Для демонстрации покажем только 2 дня -->
+
+                </div>
+
+                <!-- Навигация по неделям -->
+                <div class="week-navigation">
+                    <button class="week-nav-btn week-nav-btn--prev">
+                        ← Предыдущая неделя
+                    </button>
+                    <span class="current-week">Текущая неделя: 12 - 18 февраля 2024</span>
+                    <button class="week-nav-btn week-nav-btn--next">
+                        Следующая неделя →
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Онлайн-запись -->
+        <section class="online-booking">
+            <div class="container">
+                <div class="online-booking__inner">
+                    <div class="booking-content">
+                        <h2 class="section-title section-title--left">Онлайн-запись на тренировки</h2>
+                        <p class="booking-description">Забронируйте место в группе заранее. Это быстро, удобно и гарантирует вам место на занятии.</p>
+                        
+                        <div class="booking-features">
+                            <div class="booking-feature">
+                                <div class="feature-icon">📱</div>
+                                <h3>Мгновенное подтверждение</h3>
+                                <p>Получайте подтверждение записи сразу после бронирования</p>
+                            </div>
+                            <div class="booking-feature">
+                                <div class="feature-icon">⏰</div>
+                                <h3>Напоминания</h3>
+                                <p>Автоматические напоминания о тренировке за 2 часа</p>
+                            </div>
+                            <div class="booking-feature">
+                                <div class="feature-icon">📅</div>
+                                <h3>Личный кабинет</h3>
+                                <p>Управляйте своими записями в личном кабинете</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="booking-form-container">
+                        <form class="booking-form" id="bookingForm">
+                            <h3>Записаться на занятие</h3>
+                            
+                            <div class="form-group">
+                                <label for="className">Выберите занятие</label>
+                                <select id="className" name="className" required>
+                                    <option value="">-- Выберите занятие --</option>
+                                    <option value="yoga_morning">Утренняя йога (09:00-10:00)</option>
+                                    <option value="strength_am">Силовая тренировка (10:30-11:30)</option>
+                                    <option value="pilates_evening">Пилатес (18:00-19:00)</option>
+                                    <option value="zumba">Zumba (19:30-20:30)</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="userName">Ваше имя</label>
+                                <input type="text" id="userName" name="userName" required placeholder="Введите ваше имя">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="userPhone">Телефон</label>
+                                <input type="tel" id="userPhone" name="userPhone" required placeholder="+7 (999) 999-99-99">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="userEmail">Email</label>
+                                <input type="email" id="userEmail" name="userEmail" required placeholder="your@email.com">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="bookingDate">Дата занятия</label>
+                                <input type="date" id="bookingDate" name="bookingDate" required>
+                            </div>
+                            
+                            <button type="submit" class="btn btn--primary btn--block">Записаться на тренировку</button>
+                            
+                            <p class="form-notice">Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Мобильное приложение -->
+        <section class="mobile-app">
+            <div class="container">
+                <div class="mobile-app__inner">
+                    <div class="mobile-app__content">
+                        <h2>Записывайтесь через мобильное приложение</h2>
+                        <p>Скачайте наше приложение для iOS и Android. Бронируйте тренировки, отслеживайте прогресс и получайте персональные рекомендации.</p>
+                        
+                        <div class="app-badges">
+                            <a href="#" class="app-badge">
+                                <img src="img/app-store.svg" alt="Download on App Store" width="100" height="40">
+                            </a>
+                            <a href="#" class="app-badge">
+                                <img src="img/google-play.svg" alt="Get it on Google Play" width="100" height="40">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mobile-app__preview">
+                        <img src="img/pri.jpg" alt="Мобильное приложение FITNESS" width="300" height="400">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__col">
+                    <a href="/" class="logo footer__logo">
+                        <span class="logo__text">FITNESS</span>
+                    </a>
+                    <p class="footer__text">Современный фитнес-клуб в Туле. Достигайте целей с удовольствием.</p>
+                </div>
+                <div class="footer__col">
+                    <h3 class="footer__title">Контакты</h3>
+                    <address class="footer__contacts">
+                        <p>г. Тула, ул. Пушкина, 123</p>
+                        <p><a href="tel:+79999999999">+7 (999) 999-99-99</a></p>
+                        <p><a href="mailto:info@fitness-tula.ru">info@fitness-tula.ru</a></p>
+                    </address>
+                </div>
+                <div class="footer__col">
+                    <h3 class="footer__title">Часы работы</h3>
+                    <p>Пн-Пт: 7:00 - 23:00</p>
+                    <p>Сб-Вс: 8:00 - 22:00</p>
+                </div>
+                <div class="footer__col">
+                    <h3 class="footer__title">Мы в соцсетях</h3>
+                    <div class="social">
+                        <a href="#" aria-label="ВКонтакте">VK</a>
+                        <a href="#" aria-label="Instagram">Instagram</a>
+                        <a href="#" aria-label="Telegram">Telegram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2023 FITNESS. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Модальное окно записи -->
+    <div class="modal" id="bookingModal">
+        <div class="modal__overlay"></div>
+        <div class="modal__content">
+            <button class="modal__close" aria-label="Закрыть окно">×</button>
+            <h3 class="modal__title">Запись на тренировку</h3>
+            <div class="modal__body">
+                <p>Вы записываетесь на: <strong id="modalClassName">Утренняя йога</strong></p>
+                <p>Время: <strong id="modalClassTime">09:00 - 10:00</strong></p>
+                <p>Тренер: <strong id="modalClassTrainer">Анна Иванова</strong></p>
+                
+                <form class="quick-booking-form" id="quickBookingForm">
+                    <div class="form-group">
+                        <label for="quickUserName">Ваше имя</label>
+                        <input type="text" id="quickUserName" name="quickUserName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="quickUserPhone">Телефон</label>
+                        <input type="tel" id="quickUserPhone" name="quickUserPhone" required>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--block">Подтвердить запись</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/schedule.js"></script>
+</body>
+</html>
