@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /assets/
+Disallow: /*.css$
+Disallow: /*.js$
+Disallow: /*.pdf$
+
+Sitemap: https://valeron69-96.github.io/FitClub/sitemap.xml
